@@ -13,10 +13,11 @@ namespace ProjectModelDDD.Domain.Entities
         public string LastName { get; set; }
         public  string Email{ get; set; }
         public DateTime RegisterDate { get; set; }
-        public bool isActive { get; set; }
+        public bool IsActive { get; set; }
+        public IEnumerable<Product> Products { get; set; }
         public bool SpecialClient(Client client)
         {
-            return client.isActive && DateTime.Now.Year - client.RegisterDate.Year >= 5;
+            return client.IsActive && DateTime.Now.Year - client.RegisterDate.Year >= 5;
         }
     }
 }
