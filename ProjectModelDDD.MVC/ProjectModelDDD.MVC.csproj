@@ -156,9 +156,11 @@
     <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Modules\ApplicationModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\ClientViewModel.cs" />
     <Compile Include="ViewModels\ProductViewModel.cs" />
@@ -220,6 +222,11 @@
     <Content Include="Views\Clients\Edit.cshtml" />
     <Content Include="Views\Clients\Specials.cshtml" />
     <Content Include="Views\Clients\Index.cshtml" />
+    <Content Include="Views\Products\Create.cshtml" />
+    <Content Include="Views\Products\Delete.cshtml" />
+    <Content Include="Views\Products\Details.cshtml" />
+    <Content Include="Views\Products\Edit.cshtml" />
+    <Content Include="Views\Products\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -259,6 +266,10 @@
     <ProjectReference Include="..\ProjectModelDDD.Domain\ProjectModelDDD.Domain.csproj">
       <Project>{e76d9cbd-afe2-4c74-af0e-04e6915dbddb}</Project>
       <Name>ProjectModelDDD.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectModelDDD.Infra.Data\ProjectModelDDD.Infra.Data.csproj">
+      <Project>{8f329614-a596-4c22-8158-a2e92ef66ec5}</Project>
+      <Name>ProjectModelDDD.Infra.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

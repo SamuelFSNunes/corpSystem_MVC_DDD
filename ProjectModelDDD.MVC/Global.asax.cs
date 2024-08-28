@@ -6,6 +6,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using Ninject.Web.Common.WebHost;
 using ProjectModelDDD.Application.Services;
+using ProjectModelDDD.MVC.Modules;
 
 namespace ProjectModelDDD.MVC
 {
@@ -23,7 +24,7 @@ namespace ProjectModelDDD.MVC
         }
         protected override IKernel CreateKernel()
         {
-            var modules = new NinjectModule[] { new  };
+            var modules = new NinjectModule[] { new  ApplicationModule() };
             return new StandardKernel(modules);
         }
     }
