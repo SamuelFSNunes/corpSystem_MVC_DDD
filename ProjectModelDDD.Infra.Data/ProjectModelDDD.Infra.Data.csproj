@@ -53,8 +53,12 @@
   <ItemGroup>
     <Compile Include="Context\ProjectModelContext.cs" />
     <Compile Include="EntityConfig\ClientConfiguration.cs" />
+    <Compile Include="EntityConfig\ProductConfiguration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ClientRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProjectModelDDD.Domain\ProjectModelDDD.Domain.csproj">
@@ -62,9 +66,7 @@
       <Name>ProjectModelDDD.Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
