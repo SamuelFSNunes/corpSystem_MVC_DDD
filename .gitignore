@@ -1,0 +1,84 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.pidb
+*.scc
+*.vsp
+*.vspx
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.ipch/
+*.tlog/
+*.log
+*.vspscc
+*.orig
+
+# Assemblies
+*.dll
+*.exe
+*.app
+*.ipa
+*.apk
+*.dSYM
+*.so
+*.a
+*.lib
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+*.nuget
+.nuget/
+packages/
+NUGET/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Microsoft Visual Studio generated files
+.vs/
+.vsscc
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.Suo
+.gd
+*.class
+
+# Azure Pipelines generated files
+.vscode/
+.vs/
+
+# JetBrains Rider generated files
+.idea/
